@@ -1,1 +1,638 @@
-g
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnHub | Learning Website</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <header class="heaader">
+        <div class="container navbar">
+
+            <!-- Website Logo -->
+            <a href="#home" class="logo">
+                Learn<span>Hunt</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#login">Login / Registration</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HOME SECTION ================= -->
+        <section id="home">
+
+            <!-- Banner -->
+            <div class="hero">
+                <div class="hero-overlay">
+
+                    <div class="container hero-content">
+
+                        <p class="subtitle">
+                            LEARN • GROW • SUCCEED
+                        </p>
+
+                        <h1>
+                            Build Your Skills, Shape Your Future
+                        </h1>
+
+                        <p>
+                            Discover practical learning resources,
+                            useful tips and simple guides to improve
+                            your skills.
+                        </p>
+
+                        <a href="#blog" class="btn">
+                            Explore Articles
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ================= TABLE SECTION ================= -->
+            <section class="section container">
+
+                <div class="section-heading">
+
+                    <p class="subtitle">
+                        LEARNING PROGRAMS
+                    </p>
+
+                    <h2>
+                        Popular Courses
+                    </h2>
+
+                    <p>
+                        Choose a course and start learning at your
+                        own pace.
+                    </p>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Level</th>
+                                <th>Duration</th>
+                                <th>Mode</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>HTML & CSS Basics</td>
+                                <td>Beginner</td>
+                                <td>4 Weeks</td>
+                                <td>Online</td>
+                            </tr>
+
+                            <tr>
+                                <td>JavaScript Fundamentals</td>
+                                <td>Intermediate</td>
+                                <td>6 Weeks</td>
+                                <td>Online</td>
+                            </tr>
+
+                            <tr>
+                                <td>WordPress Web Design</td>
+                                <td>Beginner</td>
+                                <td>5 Weeks</td>
+                                <td>Online</td>
+                            </tr>
+
+                            <tr>
+                                <td>Laravel Development</td>
+                                <td>Intermediate</td>
+                                <td>8 Weeks</td>
+                                <td>Online</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= FORM SECTION ================= -->
+            <section class="section light-section">
+
+                <div class="container form-container">
+
+                    <div class="section-heading">
+
+                        <p class="subtitle">
+                            GET STARTED
+                        </p>
+
+                        <h2>
+                            Tell Us What You Want to Learn
+                        </h2>
+
+                        <p>
+                            Fill out the form and choose your
+                            preferred learning mode.
+                        </p>
+
+                    </div>
+
+
+                    <form class="form-card">
+
+                        <div class="form-grid">
+
+                            <!-- Name -->
+                            <div class="form-group">
+
+                                <label for="studentName">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="studentName"
+                                    name="studentName"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="form-group">
+
+                                <label for="studentEmail">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="studentEmail"
+                                    name="studentEmail"
+                                    placeholder="you@example.com"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Course -->
+                            <div class="form-group">
+
+                                <label for="course">
+                                    Interested Course
+                                </label>
+
+                                <select id="course" name="course">
+
+                                    <option value="">
+                                        Select a course
+                                    </option>
+
+                                    <option>
+                                        HTML & CSS Basics
+                                    </option>
+
+                                    <option>
+                                        JavaScript Fundamentals
+                                    </option>
+
+                                    <option>
+                                        WordPress Web Design
+                                    </option>
+
+                                    <option>
+                                        Laravel Development
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Radio Button -->
+                            <div class="form-group">
+
+                                <label>
+                                    Learning Mode
+                                </label>
+
+                                <div class="radio-group">
+
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="mode"
+                                            value="Online"
+                                        >
+                                        Online
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="mode"
+                                            value="Self-paced"
+                                        >
+                                        Self-paced
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="submit" class="btn">
+                            Submit Interest
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+
+        <!-- ================= BLOG SECTION ================= -->
+        <section id="blog" class="section container">
+
+            <div class="section-heading">
+
+                <p class="subtitle">
+                    FROM THE BLOG
+                </p>
+
+                <h2>
+                    Latest Articles
+                </h2>
+
+                <p>
+                    Simple ideas and practical tips for modern learners.
+                </p>
+
+            </div>
+
+
+            <div class="blog-grid">
+
+
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                        alt="Web development"
+                    >
+
+                    <div class="blog-content">
+
+                        <span class="tag">
+                            Web Design
+                        </span>
+
+                        <h3>
+                            5 Simple Principles of Good Web Design
+                        </h3>
+
+                        <p>
+                            Learn how spacing, typography, color
+                            and structure can make a website cleaner
+                            and easier to use.
+                        </p>
+
+                        <a href="#contact" class="read-more">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                        alt="Online learning"
+                    >
+
+                    <div class="blog-content">
+
+                        <span class="tag">
+                            Learning
+                        </span>
+
+                        <h3>
+                            How to Build a Consistent Learning Habit
+                        </h3>
+
+                        <p>
+                            A few practical habits can help you learn
+                            new technical skills without feeling
+                            overwhelmed.
+                        </p>
+
+                        <a href="#contact" class="read-more">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80"
+                        alt="Programming"
+                    >
+
+                    <div class="blog-content">
+
+                        <span class="tag">
+                            Programming
+                        </span>
+
+                        <h3>
+                            Why Learning the Basics Matters
+                        </h3>
+
+                        <p>
+                            Strong fundamentals make it easier to
+                            understand frameworks, solve problems
+                            and build better projects.
+                        </p>
+
+                        <a href="#contact" class="read-more">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT / ABOUT SECTION ================= -->
+        <section id="contact" class="section contact-section">
+
+            <div class="container contact-grid">
+
+                <!-- About -->
+                <div>
+
+                    <p class="subtitle">
+                        ABOUT LEARNHUB
+                    </p>
+
+                    <h2>
+                        Learning Made Simple
+                    </h2>
+
+                    <p>
+                        LearnHub is a sample educational website
+                        created with HTML and CSS.
+                    </p>
+
+                    <p>
+                        It provides a clean place to explore courses,
+                        read useful articles and connect with a
+                        learning community.
+                    </p>
+
+                </div>
+
+
+                <!-- Contact Information -->
+                <div class="contact-card">
+
+                    <h3>
+                        Contact Information
+                    </h3>
+
+                    <p>
+                        <strong>Email:</strong>
+                        hello@learnhub.com
+                    </p>
+
+                    <p>
+                        <strong>Phone:</strong>
+                        +880 1700-123456
+                    </p>
+
+                    <p>
+                        <strong>Address:</strong>
+                        Dhaka, Bangladesh
+                    </p>
+
+                    <p>
+                        <strong>Office Hours:</strong>
+                        Sat - Thu, 9:00 AM - 6:00 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= LOGIN / REGISTRATION ================= -->
+        <section id="login" class="section container">
+
+            <div class="section-heading">
+
+                <p class="subtitle">
+                    MEMBER AREA
+                </p>
+
+                <h2>
+                    Login / Registration
+                </h2>
+
+                <p>
+                    Create an account or log in to continue learning.
+                </p>
+
+            </div>
+
+
+            <form class="form-card login-card">
+
+                <!-- Username -->
+                <div class="form-group">
+
+                    <label for="username">
+                        Name / Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your username"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit" class="btn">
+                    Submit
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="#home" class="logo footer-logo">
+                    Learn<span>Hub</span>
+                </a>
+
+                <p>
+                    Learn today. Grow tomorrow.
+                </p>
+
+            </div>
+
+
+            <!-- Social Links -->
+            <div class="social-links">
+
+                <a
+                    href="https://facebook.com/"
+                    target="_blank"
+                >
+                    Facebook
+                </a>
+
+                <a
+                    href="https://linkedin.com/"
+                    target="_blank"
+                >
+                    LinkedIn
+                </a>
+
+                <a
+                    href="https://instagram.com/"
+                    target="_blank"
+                >
+                    Instagram
+                </a>
+
+            </div>
+
+
+            <p>
+                © 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
